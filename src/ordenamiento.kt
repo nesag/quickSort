@@ -1,8 +1,11 @@
 import com.sun.xml.internal.bind.v2.model.annotation.Quick
 import java.util.Arrays
+import java.util.Scanner
+import binaryGab;
+
 
 fun main (artg: Array<String>){
-
+/*
     println("\nOriginal list:")
     val array = listOf<Int>(1, 1, 7, 9, 12, 1, 2, 3, 6, 4, 5)
     println(array)
@@ -10,7 +13,14 @@ fun main (artg: Array<String>){
     val ordered =  quicksort(array)
     println(ordered)
     val deleteDuplicate = deleteElement(ordered, 1)
-    println(deleteDuplicate)
+    println(deleteDuplicate)*/
+
+    val solutionBinary = binaryGab()
+    val reader = Scanner(System.`in`)
+    print("Enter a number: ")
+
+    var decimal:Int = reader.nextInt()
+    println(solutionBinary.solution(decimal))
 }
 
 
